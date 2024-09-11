@@ -3,7 +3,7 @@
 
 ## Installation
 1. **Windows**:
-    * Download bundler by [releases]()
+    * Download bundler by [releases](https://github.com/europeDreadlyDevil/Mocha-Tabs/releases/tag/mocha-tabs-0.1.0-beta)
 2. **Other system**:
     * Build from source code with cargo and bun. You need install cargo, bun and source code. Open source code dir in your terminal and run ```bun tauri build```
 ## Example
