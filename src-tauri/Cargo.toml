@@ -1,0 +1,30 @@
+[package]
+name = "mocha-tabs"
+version = "0.1.0"
+description = "Application for grouping files on the desktop"
+authors = ["you"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+tauri-build = { version = "1", features = [] }
+
+[dependencies]
+tauri = { version = "1", features = [ "window-set-title", "path-all", "shell-open", "system-tray", "dialog"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri-plugin-context-menu = "0.8.0"
+window-shadows = "0.2.2"
+tokio = { version = "1.0.0", features = ["rt", "rt-multi-thread", "macros", "sync"] }
+whoami = "1.5.1"
+rand = "0.8.5"
+open = "5.3.0"
+walkdir = "2.5.0"
+tween = "2.0.3"
+windows-icons = "0.1.0"
+tauri-plugin-autostart = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "v1" }
+
+[features]
+# This feature is used for production builds or when a dev server is not specified, DO NOT REMOVE!!
+custom-protocol = ["tauri/custom-protocol"]

@@ -1,0 +1,50 @@
+{
+  "build": {
+    "beforeDevCommand": "bun run dev",
+    "beforeBuildCommand": "bun run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "mocha-tabs",
+    "version": "0.1.0-beta"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "window": {
+        "setTitle": true
+      },
+      "path": {
+        "all": true
+      }
+    },
+    "windows": [
+      {
+        "title": "tauri-app",
+        "skipTaskbar": true,
+        "visible": false,
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "systemTray": {
+      "iconPath": "icons/icon.ico"
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "c6bb55846fc88d06c97a414fc31f5dc7ae60f95de4e0b9e93ff9bbb3558a3fe2b3f0191e22161347acef251f3fb9d2ce168b15d6375b7679cc9493da1a73881f",
+      "icon": [
+        "icons/icon.ico"
+      ]
+    }
+  }
+}
